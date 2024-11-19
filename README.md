@@ -4,12 +4,15 @@ This template is designed to help you set up a multi-agent AI system with ease, 
 
 ## Installation
 
-Ensure you have Python >=3.10 <=3.13 installed on your system. This project uses [Poetry](https://python-poetry.org/) for dependency management and package handling, offering a seamless setup and execution experience.
+Requirements:
+- Python >=3.10 <=3.13
+- CrewAI 
+- [uv](https://docs.astral.sh/uv/)
 
-First, if you haven't already, install Poetry:
+First, if you haven't already, install uv:
 
 ```bash
-pip install poetry
+pip install uv
 ```
 
 Next, navigate to your project directory and install the dependencies:

@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 import sys
-from templatecrew.crew import TemplatecrewCrew
+from kodo_template.crew import TemplatecrewCrew
 
 # This main file is intended to be a way for your to run your
 # crew locally, so refrain from adding necessary logic into this file.

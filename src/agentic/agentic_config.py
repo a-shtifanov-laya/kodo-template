@@ -6,7 +6,7 @@ workflows : dict[str,BaseWorkflowConfig] = {}
 # Example workflow
 # Import the Crew class. If you used the flow from CrewAI docs the following import should work
 # If you are getting any erros please correct the import path
-from templatecrew.crew import TemplatecrewCrew as Crew
+from kodo_template.crew import TemplatecrewCrew as Crew
 
 # Define workflows here
 # key is the workflow name
