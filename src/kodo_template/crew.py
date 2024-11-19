@@ -36,7 +36,7 @@ class TemplatecrewCrew():
 	def reporting_task(self) -> Task:
 		return Task(
 			config=self.tasks_config['reporting_task'],
-			output_file='report.md'
+			# output_file='report.md' // it's best not to use output_files, as in the future, if the workflow will be deployed, it will be difficult to manage the output files on the remote server 
 		)
 
 	@crew
