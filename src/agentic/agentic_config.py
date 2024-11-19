@@ -10,9 +10,9 @@ from kodo_template.crew import TemplatecrewCrew as Crew
 
 # Define workflows here
 # key is the workflow name
-workflows["template"] = CrewaiWorkflowConfig(
+workflows["TEMPLATE_WORKFLOW_NAME"] = CrewaiWorkflowConfig(
     # Description of the workflow
-    description="TEMPLATE_WORKFLOW",
+    description="this workflow is a template workflow",
     # Inputs for the workflow
     inputs={"topic": "The topic to make a research about"},
     # The crew class to be used
