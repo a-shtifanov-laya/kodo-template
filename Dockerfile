@@ -3,6 +3,13 @@
 # Use a Python image with uv pre-installed
 FROM ghcr.io/astral-sh/uv:python3.11-bookworm-slim
 
+# Install build tools
+RUN apt-get update && apt-get install -y \
+  gcc \
+  python3-dev \
+  build-essential \
+  && rm -rf /var/lib/apt/lists/*
+
 # Install the project into `/app`
 WORKDIR /app
 
@@ -35,4 +42,10 @@ EXPOSE 8000
 ENV MODE=registry
 ENV REGISTRY_URL=wss://dev-agentic-registry.house-of-communication.world
 
-CMD /bin/sh -c "agentic run --mode=$MODE"
+# Start by running in HTTP server mode
+CMD ["/bin/sh", "-c", "agentic run"]
+
+# Then, you can try in registry mode
+# better to change the name of the workflow first
+# otherwise the name of the node on the registry will be "TEMPLATE_NODE"
+# CMD ["/bin/sh", "-c", "agentic run --mode=$MODE"]
