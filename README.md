@@ -49,6 +49,7 @@ This template is designed to help you set up a node for a multi-agent distribute
 
    ```bash
    crewai install
+   pip install -e .
    ```
 
 5. **Set Up Environment Variables:**
