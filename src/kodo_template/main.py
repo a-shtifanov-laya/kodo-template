@@ -12,7 +12,8 @@ def run():
     Run the crew.
     """
     inputs = {
-        'topic': 'AI LLMs'
+        'email_file': r'input\email.eml',
+        'clicks_file': r'input\clicks.csv',
     }
     TemplatecrewCrew().crew().kickoff(inputs=inputs)
 

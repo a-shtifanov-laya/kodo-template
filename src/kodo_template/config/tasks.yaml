@@ -1,17 +1,27 @@
-research_task:
+convert_task:
   description: >
-    Conduct a thorough research about {topic}
-    Make sure you find any interesting and relevant information given
-    the current year is 2024.
+    Convert the provided {email_file} in .eml format to an HTML file.
   expected_output: >
-    A list with 10 bullet points of the most relevant information about {topic}
-  agent: researcher
+    An HTML file extracted from the provided {email_file}.
+  agent: data_scientist
 
-reporting_task:
+html_parse_task:
   description: >
-    Review the context you got and expand each topic into a full section for a report.
-    Make sure the report is detailed and contains any and all relevant information.
+    Parse the `out\email.html` and extract all the web links from it.
   expected_output: >
-    A fully fledge reports with the mains topics, each with a full section of information.
-    Formatted as markdown without '```'
-  agent: reporting_analyst
+    A list with all the links found in the provided html file
+  agent: data_scientist
+
+correlate_task:
+  description: >
+    Correlate the links from the provided html with the clicks from {clicks_file}
+  expected_output: >
+    A list with the links from the provided html and the number of clicks they received
+  agent: data_scientist
+
+heatmap_task:
+  description: >
+    Generate a heatmap for the clicked links on the provided html
+  expected_output: >
+    A heatmap with the clicked links from the provided html drawn over html content
+  agent: data_scientist

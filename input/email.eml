@@ -1,0 +1,1416 @@
+Received: from DUZPR06MB8700.eurprd06.prod.outlook.com (2603:10a6:10:4dd::10)
+ by GV1PR06MB8403.eurprd06.prod.outlook.com with HTTPS; Fri, 13 Sep 2024
+ 16:00:21 +0000
+Received: from DB7PR02CA0002.eurprd02.prod.outlook.com (2603:10a6:10:52::15)
+ by DUZPR06MB8700.eurprd06.prod.outlook.com (2603:10a6:10:4dd::10) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7939.24; Fri, 13 Sep
+ 2024 16:00:16 +0000
+Received: from DB1PEPF00039233.eurprd03.prod.outlook.com
+ (2603:10a6:10:52:cafe::d4) by DB7PR02CA0002.outlook.office365.com
+ (2603:10a6:10:52::15) with Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.7939.23 via Frontend
+ Transport; Fri, 13 Sep 2024 16:00:16 +0000
+Authentication-Results: spf=pass (sender IP is 91.230.171.161)
+ smtp.mailfrom=newsletter.lindt.com; dkim=pass (signature was verified)
+ header.d=newsletter.lindt.com;dmarc=pass action=none
+ header.from=newsletter.lindt.com;compauth=pass reason=100
+Received-SPF: Pass (protection.outlook.com: domain of newsletter.lindt.com
+ designates 91.230.171.161 as permitted sender)
+ receiver=protection.outlook.com; client-ip=91.230.171.161;
+ helo=webgride161.slgnt.de; pr=C
+Received: from webgride161.slgnt.de (91.230.171.161) by
+ DB1PEPF00039233.mail.protection.outlook.com (10.167.8.106) with Microsoft
+ SMTP Server (version=TLS1_2, cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id
+ 15.20.7918.13 via Frontend Transport; Fri, 13 Sep 2024 16:00:14 +0000
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+	d=newsletter.lindt.com; s=sim2; x=1726848014;
+	i=@newsletter.lindt.com; h=from:to:subject:date:reply-to:
+	message-id:feedback-id:x-csa-complaints:list-id:mime-version:
+	content-type; bh=WdvoVM57Y+aI/tEHd+PmlwP0BjMCjNDAgBn9wLyybJI=;
+	b=Cn/NKUcnDCBD6sLC5nbHX1MLkV79OYCo0eZUdxscgR5IqXwcAc19NgWyTEZhbh
+	0x9C5jzLfuBlyBhkk54U6YNTmV6SHEYJuzVIGscz9SVLzW/fKVG6IvZ/F2nRviU0
+	T5kCUPV0P9a8ZdsU2JLLpgspxjQASKc/dtUBT47CHgY13bPcSFBVctnlN1J2rko7
+	o/n8BvpB8sEdAN++MhJAUZJ/j96H128yPJ1zjFpZKwMZx40tOVv0oiCmA2weoIrn
+	Sd2s/e+T+mSgYfvhTALAyDwtXYjuXy8nrnq42j08MHTdcKVGKnk4iS8SKWZOHDvi
+	VGTyE24TXv8k7S+d2Hku3pIQ==
+From: "Lindt Deutschland" <lindtde@newsletter.lindt.com>
+To: <a.shtifanov+lindt-de@house-of-communication.com>
+Subject: Einmalige Erinnerung: Nur noch ein Klick
+Date: Fri, 13 Sep 2024 16:00:14 +0000
+Reply-To: "Lindt Deutschland" <kundennews-de@lindt.com>
+Message-ID: <PATT3L1055_39807436_Q0hLugHdC8IOlXb0amGRQlN1Byx3OGlptFQToKFdZsTyhb5ge7eR0T0TIwqPxWVhEyUieq-YmuhQc4BsKBJfF9WoyGzGe4RRf8n1YiaGGDT7RXoVQ7gQGqQOx/Yj3bos.8A66@webgride161.slgnt.de>
+X-GRID-REF: 8A66B7582E9A48E5AC85DC32E810B6FA.PATT3L1055_39807436_Q0hLugHdC8IOlXb0amGRQlN1Byx3OGlptFQToKFdZsTyhb5ge7eR0T0TIwqPxWVhEyUieq-YmuhQc4BsKBJfF9WoyGzGe4RRf8n1YiaGGDT7RXoVQ7gQGqQOx/Yj3bos
+X-GRID-QID: 82
+X-MA-Reference: SIM_q5tq3jxyfam0XUMTy6wCJTYNVnYh69EjJPeeRom8aauuaG6WP
+X-MA-Instance: SIM_q5tq3jxyfam0XUMTy6wCJTYNVnYh69EjJPeeRom8aauuaG6WP.5947fde8d0284362fa8f2689c46f292b
+X-rpcampaign: Lindt_4923_1000300_10833
+Feedback-ID: 39807436:4923:SLGNT
+X-CSA-Complaints: csa-complaints@eco.de
+List-ID: <11.4923.newsletter.lindt.com>
+X-MailingID: 4923_1055
+Content-Type: multipart/alternative;
+	boundary="_NexPart_001_"
+Return-Path: lindtde@newsletter.lindt.com
+X-MS-Exchange-Organization-ExpirationStartTime: 13 Sep 2024 16:00:14.7883
+ (UTC)
+X-MS-Exchange-Organization-ExpirationStartTimeReason: OriginalSubmit
+X-MS-Exchange-Organization-ExpirationInterval: 1:00:00:00.0000000
+X-MS-Exchange-Organization-ExpirationIntervalReason: OriginalSubmit
+X-MS-Exchange-Organization-Network-Message-Id:
+ 67b893b6-9313-45b0-c738-08dcd40d27d7
+X-EOPAttributedMessage: 0
+X-EOPTenantAttributedMessage: 816ef078-e1e2-4e49-b265-68b9d2a9ae92:0
+X-MS-Exchange-Organization-MessageDirectionality: Incoming
+X-MS-PublicTrafficType: Email
+X-MS-TrafficTypeDiagnostic:
+ DB1PEPF00039233:EE_|DUZPR06MB8700:EE_|GV1PR06MB8403:EE_
+X-MS-Exchange-Organization-AuthSource:
+ DB1PEPF00039233.eurprd03.prod.outlook.com
+X-MS-Exchange-Organization-AuthAs: Anonymous
+X-MS-Office365-Filtering-Correlation-Id: 67b893b6-9313-45b0-c738-08dcd40d27d7
+X-MS-Exchange-AtpMessageProperties: SA|SL
+X-MS-Exchange-Organization-SCL: 1
+X-Microsoft-Antispam: BCL:3;ARA:13230040|69100299015|12012899012|5073199012;
+X-Forefront-Antispam-Report:
+ CIP:91.230.171.161;CTRY:BE;LANG:de;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:webgride161.slgnt.de;PTR:webgride161.slgnt.de;CAT:NONE;SFTY:9.25;SFS:(13230040)(69100299015)(12012899012)(5073199012);DIR:INB;SFTY:9.25;
+X-MS-Exchange-CrossTenant-OriginalArrivalTime: 13 Sep 2024 16:00:14.6008
+ (UTC)
+X-MS-Exchange-CrossTenant-Network-Message-Id: 67b893b6-9313-45b0-c738-08dcd40d27d7
+X-MS-Exchange-CrossTenant-Id: 816ef078-e1e2-4e49-b265-68b9d2a9ae92
+X-MS-Exchange-CrossTenant-AuthSource:
+ DB1PEPF00039233.eurprd03.prod.outlook.com
+X-MS-Exchange-CrossTenant-AuthAs: Anonymous
+X-MS-Exchange-CrossTenant-FromEntityHeader: Internet
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: DUZPR06MB8700
+X-MS-Exchange-Transport-EndToEndLatency: 00:00:06.5092693
+X-MS-Exchange-Processed-By-BccFoldering: 15.20.7939.015
+X-Microsoft-Antispam-Mailbox-Delivery:
+	ucf:0;jmr:0;auth:0;dest:I;ENG:(910001)(944506478)(944626604)(920097)(930097)(140003)(1420198);
+X-Microsoft-Antispam-Message-Info:
+	=?utf-8?B?RVlvY3BLOUVlVGpPV2loOEtUdU5JdFFQN0VIUUxzeTNlM1crcmJ0UGdJZmxD?=
+ =?utf-8?B?T0RaRUl1RTVqRVVJR1RYaHV1cWNXZEEyY0pQbnhsV25RcmtSQmU5OGJQdWkv?=
+ =?utf-8?B?cHMzSlcrWXRNZGRKNDZ3RVUyUjBlVXpVQ05oODJmZWdSL2JDbkp2US9vS0lI?=
+ =?utf-8?B?cjZYQ3JuM2hidktDQ3ZiVW5pcmNKaDI2bk1ndlZVc1l3U3h2WlpWUzlPTnJk?=
+ =?utf-8?B?TS9nODJpSmpuc2Q0TWJPcEZhclVKN3ZvWWh0VFZod001dEdjd09RdFI2K1A1?=
+ =?utf-8?B?dHM0cHpLS3dZQno3MTk0ZmdPZVJZUUk2RHVjTkc4cUVPQlFtMERvZDlvdHZQ?=
+ =?utf-8?B?NmZDakZlU29XNG1BanFhSUcyOXpqV2dhZy9KWEczaXdEdHVoM2FicmxmWkVY?=
+ =?utf-8?B?eDcvcXdpamx1ODhYczZsRnJZRk5HTTJvdHd5RkpFQms5UEVJZXA4Rkpkc0h4?=
+ =?utf-8?B?MFp4OGYxS3FCSTlIMFZRN1o3aDFwZVByTTRvaWRSOVYxL1R1akNYOUMrbkpk?=
+ =?utf-8?B?U0gwY2V4VE9lcEkvOGlpbndCOEIxdStXaHpCRU0zSWNEbkl3K1dWUm14Q1p6?=
+ =?utf-8?B?RjY4Ynd1TE9QZDdUaEVEQjlHWHFLOG5obXBiR3lQTDlmbFlvNWlkbG10NlBG?=
+ =?utf-8?B?dEJhNmZ0TlFGL2FqZG1NbzBxRGV3TWFTb0NUZG5md3RQUmsyakRhS3YzcjFm?=
+ =?utf-8?B?YmxhZFdpemJ6eHIxbkI2UWp2QzBUd2ZRTUF6RWFIZnEzQkFCbG1WRlFZSlZ4?=
+ =?utf-8?B?enk4STRJMTVhSnRFdXdGN20wQnlSclBXK1hjNHZrMXo4czJhTXg3azMzSnJw?=
+ =?utf-8?B?MExlNWkyUjRla29rc1hQQzQvVHkzK0JFRjhxS0FId1dwdVhtYTV3OGdWV1g3?=
+ =?utf-8?B?OC9FakdoVmszcWg3Vi9XdDg2UkNCcjA1T1NxaTU3M21UYnl1VTVrWUFnVUhM?=
+ =?utf-8?B?REhkMDdUamIyUmJzM0dqRnFGZU9wWHNpaHkyL09nWmRrQjBJYURxVzdzb01i?=
+ =?utf-8?B?cEtvTmlXVCtqd3lLUXd5VlAwdkFna0dwcVR0Z1d4SGFOV1Q3RTlDLzdwc1NM?=
+ =?utf-8?B?M1Z4L2w3aTdWeGZCSDM1NmRUTS9nSHFBK2VrU3J3a3RqUE1FNXBjbHVqVmhz?=
+ =?utf-8?B?dW5LNTRFOFNIZ3h2TUVCQTJPcjZvTndXQlBjMHRZNTNYN1pkbGYyR2lBT3FW?=
+ =?utf-8?B?UWJxbVlKMC8yc3VLeTVQUTUyTEM3a3lrWE5hV1lUSURzVTI4R3lQY0p4RzFq?=
+ =?utf-8?B?azdLZXZiTURSa2V4TytleElaWVRMRUZEZjNWUG9aenBQSjA3VnEzOVdFTjhj?=
+ =?utf-8?B?b09uZGh3S3A0SStKdXlKUjdhZUU3c2x1cmV6QWxiK0d2dTlXRFZiYUxwMm9I?=
+ =?utf-8?B?ZnE1NlFCNW1GUEorelpMQmdCamE0MFJJNStDMHhLWFd4WldhWFZyb0xsMU42?=
+ =?utf-8?B?Y3k4Z3gyOUE3T3ZFbHRQMlNUMk1uZG9XaDBvekIxbzBPYUcyMHVIZ1BZdjVJ?=
+ =?utf-8?B?SVpIbkxkcnZCSHZ1RE5xcmU1Uy9VRDlaWWNnams3R0FFdVl5THROeE9vM0Zn?=
+ =?utf-8?B?b0pHOEx2YU5MZi9RcmNlZXBCdHF0S3FyK1IwUWdwNkVUU21DUUVBRGVzdWYv?=
+ =?utf-8?B?b21oRHdWOEJYL0U5OHVCeTJJMzJqU3NLOTAzdCt3YUdJb29iV25pM3hqUCt1?=
+ =?utf-8?B?VUwzNGozK2MxRHRzTWtLRXZvTUVqQzBwdmo2dmFqNSt6YWh2U2pWampzcytC?=
+ =?utf-8?B?MjNhWmVjdEVXSmUrOXEydFhBdlBXdDEyTWRxZHpUL1ZzWHp4R1BHMVh0b0hS?=
+ =?utf-8?B?OExzQzFzd0MyQm1UajRXYldMd2JyNGttOGYzTEYrQjlQajBSTjQ4NTUrY1FI?=
+ =?utf-8?B?Tjc1L05VMTVkVHZ1M2ZqWEJVRURkbVJiMWJ1bTJIbVU4R1h0bnVSZUFmcnRE?=
+ =?utf-8?B?RlVKTENNOU1YN04vRXRWaHpFVEtQdkJBYVBibkNKaFVvN2Q4MDBsQmtvWCtN?=
+ =?utf-8?B?S3JRRklYRGRYWlV1Y29vQmFHVStUOVdiTUM5blNaWlptcXFyYXpBb1RSYzMy?=
+ =?utf-8?B?Sjh5TzlIREk5cFUyOVlwb0FDd0xheWIydWtBQkxXVVJ1UjBYQzFvVE9UVUJE?=
+ =?utf-8?B?YXNHY1VTYm16RllYWDIxRC8wcGovV3hSSzVCVWV5NEJZY0FnMDFGNDRycjUw?=
+ =?utf-8?B?S3lhTVJVZXRrbG5pWW9BclZaRmJLdnlmdTErWkxnRnIyZVU5UmRMd1BQbDRG?=
+ =?utf-8?B?dkF3bWhLWVJoVE05RW9mcEVJT2NaeXQ5a0Q0SWFHMzMwQXlJcStJa0YxQkFy?=
+ =?utf-8?B?dGo0MnBwSkFjMXVhcWk2LzB2Wm9oRXFCWXZHTk9lTVRrSlJWT0xXb1Y4TUlQ?=
+ =?utf-8?B?UVVPdmZPSXFrQ0NiUHU4bEpNZHRqQ2xpWFpBbWdUMHB5dWU0QzBGeGYrdDdm?=
+ =?utf-8?B?NmZ1QU9rUFEwamoveHBTZTBHT1FsZE5sR0dvUHg3dmcwMGhPSnhYcVBJNlh3?=
+ =?utf-8?B?d1hqWWNqL2FBUTV1VzFjckRRS294VGVuV1RGbnU3VUJKY3V5ZCtJV1p0N0Z3?=
+ =?utf-8?B?TC9yV04xaXN3SXhuYTFLbURZSTkxT1paVUlVdGhkMEJOcXU4cEF1aERCMlhw?=
+ =?utf-8?B?Rjg1dXFHb1BpRVFMdGh0NXU4M1pDdWw1TTZGZVkvYk9iVXBKb2dONFRPNHJ6?=
+ =?utf-8?B?azE1U0lHUHVyMHM5YjlISWZhdHNsVkcvUENUWUE2MWNDSi82S2tWc1NEODgx?=
+ =?utf-8?B?dGNEQUNSU1pnMkI5UVRSNjZ3STZqMU8xWEdaOXVPTXVGOThpT2JJNDZoMFlp?=
+ =?utf-8?Q?3Nn6JgHYVM/rJULZ2hPbhfNrdCuqS1xMs/OcrTI03z?=
+MIME-Version: 1.0
+
+--_NexPart_001_
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: quoted-printable
+
+Sie erhalten nicht oft eine E-Mail von lindtde@newsletter.lindt.com. Erfahr=
+en Sie, warum dies wichtig ist<https://aka.ms/LearnAboutSenderIdentificatio=
+n>
+
+[External Email]
+
+
+Jetzt Newsletteranmeldung best=C3=A4tigen
+ =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=
+=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C =E2=80=8C
+
+
+
+
+Falls Sie unsere E-Mail nicht oder nur teilweise lesen k=C3=B6nnen, klicken=
+ Sie bitte hier<https://newsletter.lindt.com/optiext/optiextension.dll?ID=
+=3DqYZq1j073dkHLuC4sj3w4ImJr6cN8oWv9U0kWwzuCNeNEHQazKSgtMqqmteGoaeIvyWWr_hs=
+NfDOhVqaSIddL2m%2BrFhOF>
+[https://newsletter.lindt.com/images/SMC/Template/header_footer/icons/accou=
+nt.png]      Anmelden<https://newsletter.lindt.com/optiext/optiextension.dl=
+l?ID=3DqYZqW_fOSNIbywHIZsu2Q1NXA5pAyncduqjRp_4y6k6CEp4G5wcy0%2Bcklj7XquISJR=
+4IqGB0c2Fu_hIm1WG_Nb_RoW4NFdUf1hqxMUqZ>
+
+
+[Lindt Onlineshop]
+
+[Lindt Onlineshop]
+
+Welt von Lindt<https://newsletter.lindt.com/optiext/optiextension.dll?ID=3D=
+qYZq1NlahixF0v5KtgVFGRNiYnHJZh9xFyKTCb9TuQFFklmG4skCwJ7TgU41m_HzR_5DobeLhhP=
+LS_47C9EkYrVXqJcPieGVw6cdieqP>
+Lindt Shops<https://newsletter.lindt.com/optiext/optiextension.dll?ID=3DqYZ=
+q2RbHm5CjViW2LEnDK4O0Rkq69t%2BMCXJNWeLfUC0AbsAG4mg2VmYvKNQs82d3wxDGCX7jZvId=
+31yD%2BLzly9wI0O7L_hbrDBsjumWR>
+Online Shop<https://newsletter.lindt.com/optiext/optiextension.dll?ID=3DqYZ=
+qY0aYqPDBb9Jb3J_c6Ws67hb8XXIh9PZyQ4pF71Yv7nuG41ZVyKX7RCybePUtQ43Y%2BfjWWzjd=
+HlHT%2Bpy4UG0BzQGJ9pLCgggO9aWV>
+
+
+
+Einmalige Erinnerung: Ihr Interesse an unserem Lindt Newsletter.
+
+Sie haben sich k=C3=BCrzlich f=C3=BCr den Lindt Newsletter angemeldet, aber=
+ die Anmeldung noch nicht best=C3=A4tigt. Damit wir Ihnen Lindt Newsletter =
+mit Sonderangeboten, Produktneuheiten, Rezepten, Einladungen zu Veranstaltu=
+ngen und vielem mehr senden d=C3=BCrfen, ben=C3=B6tigen wir Ihre Best=C3=A4=
+tigung. Sie sind nur noch einen Klick davon entfernt.
+
+[https://newsletter.lindt.com/Portal/resourcehandler/static/x.png]
+
+
+Jetzt best=C3=A4tigen<https://newsletter.lindt.com/optiext/optiextension.dl=
+l?ID=3DqYZq1CGfDYmCZgpr4nPci9%2BHcN%2BtMdEQXeCZ3Y2UcLQCWo5G4Rnak8P6jz8S_SNI=
+l12LH9YXsmjZsGxXEpKnI8_ycagGOxDTPSsGP9qN>
+[https://newsletter.lindt.com/Portal/resourcehandler/static/x.png]
+
+Dies ist eine einmalige Erinnerung zur Best=C3=A4tigung der Newsletter-Anme=
+ldung, wenn Sie kein Interesse mehr an dem Erhalt des Lindt Newsletters hab=
+en oder die Anmeldung nicht selbst get=C3=A4tigt haben k=C3=B6nnen Sie dies=
+e E-Mail ignorieren - wir werden Sie zuk=C3=BCnftig nicht wieder erinnern.
+
+Der Schutz Ihrer pers=C3=B6nlichen Daten ist uns wichtig. Weitere Informati=
+onen finden Sie in den Lindt Datenschutzrichtlinien<https://newsletter.lind=
+t.com/optiext/optiextension.dll?ID=3DqYZq0%2B30HJyavgXOjMARMx8z%2By0%2BphK7=
+o3N4JN0eRxB0Oj9G5Aa0BbdkR_uzf04ufQKk3El57YBCJxseBtVQa6n_cNp8zE_IoJXUKqWD>. =
+Sie k=C3=B6nnen sich jederzeit von dem Erhalt der Lindt Newsletter abmelden=
+, indem Sie in einem Lindt Newsletter auf den Link zum Abbestellen klicken =
+oder indem Sie uns auf www.lindt.de<https://newsletter.lindt.com/optiext/op=
+tiextension.dll?ID=3DqYZq0jbynEklJkOSFB7oQdgfbFPHGJGIo9kjJ_GjgT3s62va5zwW9T=
+IEk2Dj_ak3VHDD93O4rtC9k8UR%2BhjDQfy_oYNfdPIyt4G0zCq3> besuchen.
+
+[https://newsletter.lindt.com/Portal/resourcehandler/static/x.png]
+
+
+
+Kontakt<https://newsletter.lindt.com/optiext/optiextension.dll?ID=3DqYZqXjT=
+9hBWn63FyF1CyqataPItAt%2BX10nm5ZLQ4RRw2JigG4wB_fDEGn_pGUrnWxuSW%2BW6B4roAtY=
+wm6tfa_J8dgWzInUOhq38H7_qy>
+Gewinnspiele Gewinn-
+spiele <https://newsletter.lindt.com/optiext/optiextension.dll?ID=3DqYZq2%2=
+BilIuvZ42eoH%2BEA185AjG2mXFYnAu2dV48sG56Etvba4CF554J33k2ULAJk8BBkqqIyNwwYzH=
+JCiI5yk8zWhDNSvYbNjuijpZqJ>
+Rezepte<https://newsletter.lindt.com/optiext/optiextension.dll?ID=3DqYZq1fo=
+ZE9_P9RCVuJ831XljH%2BoFY8dJN%2Bm8MnlEumeVQVeG5fGoZE_hDWPGS3Z50jhf2XaDJ22EA7=
+KTk%2BUfwlqSDApfD1lWSPKdh7W6>
+Nachhaltigkeit NACHHAL-
+TIGKEIT <https://newsletter.lindt.com/optiext/optiextension.dll?ID=3DqYZqW4=
+mtnRdyR60uW8MUlqWg5C7GKSCNoIGo5U1lm5Muu%2B%2BG5OUF4npaDJmU98fEWS6grHpnF8uIG=
+3ZYNSj8eIWPhd8anF4Znw1rhnqg>
+
+
+Chocoladefabriken Lindt & Spr=C3=BCngli GmbH
+S=C3=BCsterfeldstr. 130
+52072 Aachen
+Deutschland
+
+Sitz: Aachen, Amtsgericht Aachen HRB 3452
+Gesch=C3=A4ftsf=C3=BChrer: Michal Spiller, Martin Allerchen
+Handelsregistereintrag: AG Aachen HBR 3452
+UStId.-Nr.: DE121688929
+
+Dieser Newsletter wurde an a.shtifanov+lindt-de@house-of-communication.com =
+gesendet. Dieser Newsletter wird Ihnen ausschlie=C3=9Flich mit Ihrem Einver=
+st=C3=A4ndnis zugesandt. Wollen Sie diesen Newsletter in Zukunft nicht mehr=
+ erhalten, klicken Sie bitte hier<https://newsletter.lindt.com/optiext/opti=
+extension.dll?ID=3DqYZqY2pczYCzt9spNupVA5o2nCsSFfhgqbyAOah2F8d9_LoG5RwGRDk8=
+pdzHsfygcAvSsX9PsU%2BsuHuSnbv%2Bc09dYoUWL5fCd0uJr_WI>.
+
+
+
+--_NexPart_001_
+Content-Type: text/html;
+	charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-microso=
+ft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office"><head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Dutf-8"><m=
+eta name=3D"viewport" content=3D"width=3Ddevice-width">
+<meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+<meta name=3D"x-apple-disable-message-reformatting">
+<title>Einmalige Erinnerung: Nur noch ein Klick</title>
+<!--[if (gte mso 9)|(IE)]><xml><o:OfficeDocumentSettings><o:AllowPNG/><o:Pi=
+xelsPerInch>96</o:PixelsPerInch></o:OfficeDocumentSettings></xml><![endif]-=
+-><style type=3D"text/css">*{-ms-text-size-adjust:100%;-webkit-text-size-ad=
+just:100%}html,body{padding:0!important;height:100%!important;width:100%!im=
+portant;margin:0!important}div[style*=3D"margin: 16px 0"]{margin:0!importan=
+t}table,td{mso-table-lspace:0!important;mso-table-rspace:0!important}table{=
+border-spacing:0!important;margin:0 auto!important}.yshortcuts a{border-bot=
+tom:none!important}a[x-apple-data-detectors]{color:inherit!important;text-d=
+ecoration:underline!important}.applelinks a{color:#222;text-decoration:none=
+}th{padding:0!important;margin:0!important;font-weight:normal}span.MsoHyper=
+link{mso-style-priority:99;color:inherit}span.MsoHyperlinkFollowed{mso-styl=
+e-priority:99;color:inherit}#MessageViewBody,#MessageWebViewDiv{width:100%!=
+important}@media screen yahoo{*{overflow:visible!important;}.y-overflow-hid=
+den{overflow:hidden!important;}.m_show{display:none;}}.columns{display:inli=
+ne-block;text-align:center}#preheader{display:none}.m_show table{display:no=
+ne}
+@media screen and (max-width:600px){
+    .quarter{width:25%!important;max-width:25%!important}.third{width:33.33=
+3%!important;max-width:33.333%!important}.second{width:50%!important;max-wi=
+dth:50%!important}.full{width:100%!important;max-width:100%!important}.m_hi=
+de{display:none!important}.m_show{display:table!important}.m_hide table{dis=
+play:none!important}.m_show table{display:table!important}.geniuswrapper{wi=
+dth:320px!important;padding:0!important}.geniuscontainer{width:300px!import=
+ant;padding:0!important}.geniusmobile{width:300px!important;display:block!i=
+mportant;padding:0!important}.btn_table{display:table!important}.btn_td{dis=
+play:block!important}
+}
+@media screen and (max-width:480px){
+    .quarter{width:50%!important;max-width:50%!important}.second,.third{wid=
+th:100%!important;max-width:100%!important}
+}</style><style>@font-face {
+        font-family: 'Optima Nova';
+        src: url('https://lindt.slgnt.eu/scripts/fonts/optima_nova.ttf') fo=
+rmat('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+   =20
+    @font-face {
+        font-family: 'Optima Nova';
+        src: url('https://lindt.slgnt.eu/scripts/fonts/optima_nova_bold.ttf=
+') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    @font-face {
+        font-family: Roboto;
+        src: url('https://lindt.slgnt.eu/scripts/fonts/roboto.ttf') format(=
+'truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+   =20
+    @font-face {
+        font-family: Roboto;
+        src: url('https://lindt.slgnt.eu/scripts/fonts/robotoBold.ttf') for=
+mat('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }</style>
+</head>
+<body bgcolor=3D"#ffffff" width=3D"100%" style=3D"margin:0;padding:0">
+<table border=3D"0" cellspacing=3D"0" cellpadding=3D"0" width=3D"100%" styl=
+e=3D" aspect-ratio: revert !important; background: revert !important; block=
+-size: revert !important; border: revert !important; bottom: revert !import=
+ant; color: revert !important; color-scheme: revert !important; content-vis=
+ibility: revert !important; cursor: revert !important; direction: revert !i=
+mportant; display: revert !important; font-size: revert !important; height:=
+ revert !important; hyphens: revert !important; letter-spacing: revert !imp=
+ortant; line-height: revert !important; margin: revert !important; opacity:=
+ revert !important; order: revert !important; outline: revert !important; o=
+verflow: revert !important; padding: revert !important; position: revert !i=
+mportant; resize: revert !important; rotate: revert !important; scale: reve=
+rt !important; tab-size: revert !important; table-layout: revert !important=
+; text-align: revert !important; text-indent: revert !important; text-orien=
+tation: revert !important; text-overflow: revert !important; text-shadow: r=
+evert !important; text-transform: revert !important; text-wrap: revert !imp=
+ortant; top: revert !important; transition: revert !important; user-select:=
+ revert !important; vertical-align: revert !important; visibility: revert !=
+important; white-space: revert !important; width: revert !important; word-b=
+reak: revert !important; word-spacing: revert !important; writing-mode: rev=
+ert !important; zoom: revert !important; cellpadding: 0 !important; border:=
+ 0 !important; cellspacing: 0 !important; display: table !important; width:=
+ 100% !important; table-layout: fixed !important; border-collapse: seperate=
+ !important; float: none !important; border-spacing: 0px 0px !important; " =
+align=3D"left">
+<tbody style=3D" aspect-ratio: revert !important; background: revert !impor=
+tant; block-size: revert !important; border: revert !important; bottom: rev=
+ert !important; color: revert !important; color-scheme: revert !important; =
+content-visibility: revert !important; cursor: revert !important; direction=
+: revert !important; display: revert !important; font-size: revert !importa=
+nt; height: revert !important; hyphens: revert !important; letter-spacing: =
+revert !important; line-height: revert !important; margin: revert !importan=
+t; opacity: revert !important; order: revert !important; outline: revert !i=
+mportant; overflow: revert !important; padding: revert !important; position=
+: revert !important; resize: revert !important; rotate: revert !important; =
+scale: revert !important; tab-size: revert !important; table-layout: revert=
+ !important; text-align: revert !important; text-indent: revert !important;=
+ text-orientation: revert !important; text-overflow: revert !important; tex=
+t-shadow: revert !important; text-transform: revert !important; text-wrap: =
+revert !important; top: revert !important; transition: revert !important; u=
+ser-select: revert !important; vertical-align: revert !important; visibilit=
+y: revert !important; white-space: revert !important; width: revert !import=
+ant; word-break: revert !important; word-spacing: revert !important; writin=
+g-mode: revert !important; zoom: revert !important; display: block !importa=
+nt; ">
+<tr style=3D" aspect-ratio: revert !important; background: revert !importan=
+t; block-size: revert !important; border: revert !important; bottom: revert=
+ !important; color: revert !important; color-scheme: revert !important; con=
+tent-visibility: revert !important; cursor: revert !important; direction: r=
+evert !important; display: revert !important; font-size: revert !important;=
+ height: revert !important; hyphens: revert !important; letter-spacing: rev=
+ert !important; line-height: revert !important; margin: revert !important; =
+opacity: revert !important; order: revert !important; outline: revert !impo=
+rtant; overflow: revert !important; padding: revert !important; position: r=
+evert !important; resize: revert !important; rotate: revert !important; sca=
+le: revert !important; tab-size: revert !important; table-layout: revert !i=
+mportant; text-align: revert !important; text-indent: revert !important; te=
+xt-orientation: revert !important; text-overflow: revert !important; text-s=
+hadow: revert !important; text-transform: revert !important; text-wrap: rev=
+ert !important; top: revert !important; transition: revert !important; user=
+-select: revert !important; vertical-align: revert !important; visibility: =
+revert !important; white-space: revert !important; width: revert !important=
+; word-break: revert !important; word-spacing: revert !important; writing-m=
+ode: revert !important; zoom: revert !important; ">
+<td valign=3D"middle" width=3D"1px" bgcolor=3D"#A6A6A6" cellpadding=3D"7px =
+2px 7px 2px" style=3D" aspect-ratio: revert !important; background: revert =
+!important; block-size: revert !important; border: revert !important; botto=
+m: revert !important; color: revert !important; color-scheme: revert !impor=
+tant; content-visibility: revert !important; cursor: revert !important; dir=
+ection: revert !important; display: revert !important; font-size: revert !i=
+mportant; height: revert !important; hyphens: revert !important; letter-spa=
+cing: revert !important; line-height: revert !important; margin: revert !im=
+portant; opacity: revert !important; order: revert !important; outline: rev=
+ert !important; overflow: revert !important; padding: revert !important; po=
+sition: revert !important; resize: revert !important; rotate: revert !impor=
+tant; scale: revert !important; tab-size: revert !important; table-layout: =
+revert !important; text-align: revert !important; text-indent: revert !impo=
+rtant; text-orientation: revert !important; text-overflow: revert !importan=
+t; text-shadow: revert !important; text-transform: revert !important; text-=
+wrap: revert !important; top: revert !important; transition: revert !import=
+ant; user-select: revert !important; vertical-align: revert !important; vis=
+ibility: revert !important; white-space: revert !important; width: revert !=
+important; word-break: revert !important; word-spacing: revert !important; =
+writing-mode: revert !important; zoom: revert !important; padding: 7px 2px =
+7px 2px !important; background-color: #A6A6A6 !important; valign: middle !i=
+mportant; width: 0px !important; ">
+</td>
+<td valign=3D"middle" width=3D"100%" bgcolor=3D"#EAEAEA" cellpadding=3D"7px=
+ 5px 7px 15px" color=3D"#212121" style=3D" aspect-ratio: revert !important;=
+ background: revert !important; block-size: revert !important; border: reve=
+rt !important; bottom: revert !important; color: revert !important; color-s=
+cheme: revert !important; content-visibility: revert !important; cursor: re=
+vert !important; direction: revert !important; display: revert !important; =
+font-size: revert !important; height: revert !important; hyphens: revert !i=
+mportant; letter-spacing: revert !important; line-height: revert !important=
+; margin: revert !important; opacity: revert !important; order: revert !imp=
+ortant; outline: revert !important; overflow: revert !important; padding: r=
+evert !important; position: revert !important; resize: revert !important; r=
+otate: revert !important; scale: revert !important; tab-size: revert !impor=
+tant; table-layout: revert !important; text-align: revert !important; text-=
+indent: revert !important; text-orientation: revert !important; text-overfl=
+ow: revert !important; text-shadow: revert !important; text-transform: reve=
+rt !important; text-wrap: revert !important; top: revert !important; transi=
+tion: revert !important; user-select: revert !important; vertical-align: re=
+vert !important; visibility: revert !important; white-space: revert !import=
+ant; width: revert !important; word-break: revert !important; word-spacing:=
+ revert !important; writing-mode: revert !important; zoom: revert !importan=
+t; width: 100% !important; background-color: #EAEAEA !important; padding: 7=
+px 5px 7px 15px !important; font-family: wf_segoe-ui_normal, Segoe UI, Sego=
+e WP, Tahoma, Arial, sans-serif !important; font-size: 12px !important; fon=
+t-weight: normal !important; color: #212121 !important; text-align: left !i=
+mportant; word-wrap: break-word !important; ">
+<div style=3D" aspect-ratio: revert !important; background: revert !importa=
+nt; block-size: revert !important; border: revert !important; bottom: rever=
+t !important; color: revert !important; color-scheme: revert !important; co=
+ntent-visibility: revert !important; cursor: revert !important; direction: =
+revert !important; display: revert !important; font-size: revert !important=
+; height: revert !important; hyphens: revert !important; letter-spacing: re=
+vert !important; line-height: revert !important; margin: revert !important;=
+ opacity: revert !important; order: revert !important; outline: revert !imp=
+ortant; overflow: revert !important; padding: revert !important; position: =
+revert !important; resize: revert !important; rotate: revert !important; sc=
+ale: revert !important; tab-size: revert !important; table-layout: revert !=
+important; text-align: revert !important; text-indent: revert !important; t=
+ext-orientation: revert !important; text-overflow: revert !important; text-=
+shadow: revert !important; text-transform: revert !important; text-wrap: re=
+vert !important; top: revert !important; transition: revert !important; use=
+r-select: revert !important; vertical-align: revert !important; visibility:=
+ revert !important; white-space: revert !important; width: revert !importan=
+t; word-break: revert !important; word-spacing: revert !important; writing-=
+mode: revert !important; zoom: revert !important; ">
+Sie erhalten nicht oft eine E-Mail von lindtde@newsletter.lindt.com. <a hre=
+f=3D"https://aka.ms/LearnAboutSenderIdentification">
+Erfahren Sie, warum dies wichtig ist</a> </div>
+</td>
+<td valign=3D"middle" align=3D"left" width=3D"75px" bgcolor=3D"#EAEAEA" cel=
+lpadding=3D"7px 5px 7px 5px" color=3D"#212121" style=3D" aspect-ratio: reve=
+rt !important; background: revert !important; block-size: revert !important=
+; border: revert !important; bottom: revert !important; color: revert !impo=
+rtant; color-scheme: revert !important; content-visibility: revert !importa=
+nt; cursor: revert !important; direction: revert !important; display: rever=
+t !important; font-size: revert !important; height: revert !important; hyph=
+ens: revert !important; letter-spacing: revert !important; line-height: rev=
+ert !important; margin: revert !important; opacity: revert !important; orde=
+r: revert !important; outline: revert !important; overflow: revert !importa=
+nt; padding: revert !important; position: revert !important; resize: revert=
+ !important; rotate: revert !important; scale: revert !important; tab-size:=
+ revert !important; table-layout: revert !important; text-align: revert !im=
+portant; text-indent: revert !important; text-orientation: revert !importan=
+t; text-overflow: revert !important; text-shadow: revert !important; text-t=
+ransform: revert !important; text-wrap: revert !important; top: revert !imp=
+ortant; transition: revert !important; user-select: revert !important; vert=
+ical-align: revert !important; visibility: revert !important; white-space: =
+revert !important; width: revert !important; word-break: revert !important;=
+ word-spacing: revert !important; writing-mode: revert !important; zoom: re=
+vert !important; width: 75px !important; background-color: #EAEAEA !importa=
+nt; padding: 7px 5px 7px 5px !important; font-family: wf_segoe-ui_normal, S=
+egoe UI, Segoe WP, Tahoma, Arial, sans-serif !important; font-size: 12px !i=
+mportant; font-weight: normal !important; color: #212121 !important; text-a=
+lign: left !important; word-wrap: break-word !important; align: left !impor=
+tant; ">
+</td>
+</tr>
+</tbody>
+</table>
+<div>
+<p><span style=3D"color: #ff0000;"><strong>[External Email]</strong></span>=
+<br>
+<br>
+</p>
+<div>
+<div style=3D"display:none;font-size:0px;color:#999999;line-height:0px;max-=
+height:0px;max-width:0px;opacity:0;overflow:hidden;">
+Jetzt Newsletteranmeldung best=C3=A4tigen</div>
+<div style=3D"display:none;max-height:0px;overflow:hidden;">&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;=E2=80=8C=
+&nbsp;=E2=80=8C&nbsp;=E2=80=8C&nbsp;</div>
+<img width=3D"1" height=3D"1" src=3D"https://newsletter.lindt.com/optiext/o=
+ptiextension.dll?ID=3DrZYr1oqQ0KSJXp8BqoXSkI_Aehq7TO5Dsfe0nI0gdFvwrk%2BH4dj=
+mSHJDedIgKbvmBrKniP_9SHae8hb6oNrB7pQIFHvdPpUuqvgP1vX_" style=3D"display:non=
+e; margin:0; padding:0; visibility:hidden; overflow:hidden; max-height:0;wi=
+dth:0px;height:0px;font-size:0;color:#FFFFFF;mso-hide:all;float: left;line-=
+height:0;" alt=3D"">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td bgcolor=3D"#ffffff" valign=3D"top" style=3D"width:600px;text-align:left=
+;word-wrap:break-word;word-break:normal">
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td bgcolor=3D"#ffffff" valign=3D"top" style=3D"width:600px;text-align:left=
+;word-wrap:break-word;word-break:normal">
+<table class=3D"sg_editor_hide" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" width=3D"100%" role=3D"presentation">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0;line-height:1px;height:1px;" heig=
+ht=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" style=3D"width:600px;" align=3D"center">
+<table bgcolor=3D"#FFFFFF" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ width=3D"100%" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"font-size:0;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" styl=
+e=3D"text-align:center;" role=3D"presentation">
+<tbody>
+<tr>
+<th style=3D"text-align:left;width:66.666%; max-width:382px;" valign=3D"top=
+">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"padding:5px 10px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"font-family:'Roboto', arial; font-weight:normal; font-size:10p=
+x; mso-line-height-rule:exactly; line-height:20px; color:#424242 ;max-heigh=
+t: 999999px; word-wrap: break-word; word-break: break-word;">
+Falls Sie unsere E-Mail nicht oder nur teilweise lesen k=C3=B6nnen, klicken=
+ Sie bitte <strong style=3D"font-weight: normal;">
+<a style=3D"text-decoration:underline;color:#424242;" href=3D"https://eur02=
+.safelinks.protection.outlook.com/?url=3Dhttps%3A%2F%2Fnewsletter.lindt.com=
+%2Foptiext%2Foptiextension.dll%3FID%3DqYZq1j073dkHLuC4sj3w4ImJr6cN8oWv9U0kW=
+wzuCNeNEHQazKSgtMqqmteGoaeIvyWWr_hsNfDOhVqaSIddL2m%252BrFhOF&amp;data=3D05%=
+7C02%7Ca.shtifanov%40house-of-communication.com%7C67b893b6931345b0c73808dcd=
+40d27d7%7C816ef078e1e24e49b26568b9d2a9ae92%7C0%7C0%7C638618400212999413%7CU=
+nknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLC=
+JXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3DZUyslKmcHebkodPLk%2BloixrrMV1Ag%2BTXC=
+67fuXvpet4%3D&amp;reserved=3D0" originalsrc=3D"https://newsletter.lindt.com=
+/optiext/optiextension.dll?ID=3DqYZq1j073dkHLuC4sj3w4ImJr6cN8oWv9U0kWwzuCNe=
+NEHQazKSgtMqqmteGoaeIvyWWr_hsNfDOhVqaSIddL2m%2BrFhOF" shash=3D"biKCCqCkAs3n=
+EKJXxXzOefIaL5h2RTNf2MRhUkbsBKR8CVrZE9xEMJ7FBgGnoBkBEXf/f/SREPH0NTOBnI1ikvw=
+e+pYFiO0UF8IJde83Yc6Y8WKwuW50ZctW97j6/DpUhzLnwVFipDmzAypf46Dk5jfrtAvWDvP4ta=
+flEDsttY4=3D">hier</a></strong>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+<th style=3D"text-align:right;width:33.333%; max-width:188px;" valign=3D"to=
+p">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"padding:5px 10px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"right">
+<tbody>
+<tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" align=3D"right">
+<tbody>
+<tr>
+<td style=3D"padding-right:10px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" align=3D"right">
+<tbody>
+<tr>
+<td style=3D"height:20px;padding-right: 5px;"><img src=3D"https://newslette=
+r.lindt.com/images/SMC/Template/header_footer/icons/account.png" style=3D"w=
+idth:20px;max-height:20px;height:20px;max-width:20px;" width=3D"20">
+</td>
+<td class=3D"m_hide" style=3D"font-family:'Roboto', arial; font-weight:norm=
+al; font-size:11px; mso-line-height-rule:exactly; line-height:20px; color:#=
+424242 ;max-height: 999999px; word-wrap: break-word; word-break: break-word=
+;text-transform:uppercase;vertical-align:middle;" valign=3D"middle">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fnewsletter.lindt.com%2Foptiext%2Foptiextension.dll%3FID%3DqYZqW_fOSNIby=
+wHIZsu2Q1NXA5pAyncduqjRp_4y6k6CEp4G5wcy0%252Bcklj7XquISJR4IqGB0c2Fu_hIm1WG_=
+Nb_RoW4NFdUf1hqxMUqZ&amp;data=3D05%7C02%7Ca.shtifanov%40house-of-communicat=
+ion.com%7C67b893b6931345b0c73808dcd40d27d7%7C816ef078e1e24e49b26568b9d2a9ae=
+92%7C0%7C0%7C638618400213020259%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDA=
+iLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3DM5=
+Mhf27rYxibYbwBFrGIdVvmiYCEBRk7btHFd9in6nc%3D&amp;reserved=3D0" originalsrc=
+=3D"https://newsletter.lindt.com/optiext/optiextension.dll?ID=3DqYZqW_fOSNI=
+bywHIZsu2Q1NXA5pAyncduqjRp_4y6k6CEp4G5wcy0%2Bcklj7XquISJR4IqGB0c2Fu_hIm1WG_=
+Nb_RoW4NFdUf1hqxMUqZ" shash=3D"vTg5Zjiq6tu9roDKHAcmit9E2fw5zkUauIPBHd0Jab+9=
+XJfnFtwJcBX1LX9nKmEpLH6fjlGiQrRegEQSE3cysdpdm8OcWa66Xf+O9h5tHek9mHByCsLMawK=
+cY2HqsfrxTKw4wUm/TIIwnW7AzdDM66xXDU527affXFLoGrFrOqw=3D" style=3D"color:#42=
+4242;text-decoration:none;"><strong style=3D"font-weight:normal;">Anmelden<=
+/strong></a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" align=3D"right">
+<tbody>
+<tr>
+<td style=3D"height:20px;padding-right: 5px;"><!--<sg:lang value=3D"de_de">=
+<a href=3D"https://www.lindt.de" data-link=3D"WISHLIST_LINK_DE_DE" ><strong=
+ style=3D"font-weight:normal;">Wunschliste</strong></a></sg:lang>--></td>
+<td class=3D"m_hide" style=3D"font-family:'Roboto', arial; font-weight:norm=
+al; font-size:11px; mso-line-height-rule:exactly; line-height:20px; color:#=
+424242 ;max-height: 999999px; word-wrap: break-word; word-break: break-word=
+;text-transform:uppercase;vertical-align:middle;" valign=3D"middle">
+<!--<sg:lang value=3D"de_de"><a href=3D"https://www.lindt.de" data-link=3D"=
+WISHLIST_LINK_DE_DE" style=3D"color:#424242;text-decoration:none;"><strong =
+style=3D"font-weight:normal;">Wunschliste</strong></a></sg:lang>--></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</th>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0;line-height:1px;height:1px;" heig=
+ht=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- :: End preheader layout --><!-- :: Start Hero image -->
+<table class=3D"sg_editor_hide m_hide" cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" width=3D"100%" role=3D"presentation" bgcolor=3D"#FFFFFF">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0;line-height:1px;height:1px;" heig=
+ht=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" style=3D"width:600px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><img id=3D"OWATemporaryImageDivContainer1" src=3D"http=
+s://newsletter.lindt.com/images/SMC/Template/header_footer/Headers%20GERMAN=
+Y%20ONLY/GER_header_generic_desktop.jpg" alt=3D"Lindt Onlineshop" border=3D=
+"0" width=3D"600" height=3D"100" style=3D"display:block;width:600px;height:=
+100px;max-width:100%"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0;line-height:1px;height:1px;" heig=
+ht=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- :: End Hero image --><!--[if !mso]><!--><!-- :: Start Hero image -->
+<table class=3D"sg_editor_hide m_show" cellpadding=3D"0" cellspacing=3D"0" =
+border=3D"0" width=3D"100%" role=3D"presentation" bgcolor=3D"#FFFFFF" style=
+=3D"display:none;">
+<tbody>
+<tr>
+<td style=3D"min-width:100%;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center"><img id=3D"OWATemporaryImageDivContainer1" src=3D"http=
+s://newsletter.lindt.com/images/SMC/Template/header_footer/Headers%20GERMAN=
+Y%20ONLY/GER_header_generic_mobile.jpg" alt=3D"Lindt Onlineshop" border=3D"=
+0" width=3D"600" style=3D"display:block;width:600px;max-width:100%"></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- :: End Hero image --><!-- <![endif]--><!-- :: Start Menu layout -->
+<table class=3D"sg_editor_hide" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" width=3D"100%" role=3D"presentation">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0;line-height:1px;height:1px;" heig=
+ht=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" style=3D"width:600px;">
+<table bgcolor=3D"#FFFFFF" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ width=3D"100%" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"font-size:0;padding:15px 10px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" styl=
+e=3D"text-align:center;" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"text-align:center;width:33.333%; max-width:190px;border-right:=
+ 1px solid #cba052;" valign=3D"top">
+<!-- :: Start Article (1) -->
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"padding:0px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"font-family:'Optima Nova', arial; font-weight:normal; font-siz=
+e:12px; mso-line-height-rule:exactly; line-height:20px; color:#CBA052;max-h=
+eight: 999999px; word-wrap: break-word; word-break: break-word;text-transfo=
+rm: uppercase;text-align:center;padding: 0px 10px;">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fnewsletter.lindt.com%2Foptiext%2Foptiextension.dll%3FID%3DqYZq1NlahixF0=
+v5KtgVFGRNiYnHJZh9xFyKTCb9TuQFFklmG4skCwJ7TgU41m_HzR_5DobeLhhPLS_47C9EkYrVX=
+qJcPieGVw6cdieqP&amp;data=3D05%7C02%7Ca.shtifanov%40house-of-communication.=
+com%7C67b893b6931345b0c73808dcd40d27d7%7C816ef078e1e24e49b26568b9d2a9ae92%7=
+C0%7C0%7C638618400213034048%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJ=
+QIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3DII6gPg=
+xuYBSogPULniV4PQQIDvLaee%2BuAr2MbzjMze0%3D&amp;reserved=3D0" originalsrc=3D=
+"https://newsletter.lindt.com/optiext/optiextension.dll?ID=3DqYZq1NlahixF0v=
+5KtgVFGRNiYnHJZh9xFyKTCb9TuQFFklmG4skCwJ7TgU41m_HzR_5DobeLhhPLS_47C9EkYrVXq=
+JcPieGVw6cdieqP" shash=3D"lD9rDRh5O4BfvQxRvOn5kHF7sMMT6gin9K2RI+ngiYzm57iBo=
+/c1/oRvt2/idIR/Ei44uNhqsE0pP/qJUDqQpPYeTAyq2FOQ7UvfSlnkFraSdCCmvAx93TYP7d/n=
+WlP/mvg5jfH688lYvcSpMx1aYZBlhwhAuY3Syhh7Bi7b4ug=3D" style=3D"color:#CBA052;=
+text-decoration:none;"><strong style=3D"font-weight:normal;">Welt
+ von Lindt</strong></a> </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- :: End Article (1) --></td>
+<td style=3D"text-align:center;width:33.333%; max-width:190px;border-right:=
+ 1px solid #cba052;" valign=3D"top">
+<!-- :: Start Article (2) -->
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"padding:0px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"font-family:'Optima Nova', arial; font-weight:normal; font-siz=
+e:12px; mso-line-height-rule:exactly; line-height:20px; color:#CBA052; max-=
+height: 999999px; word-wrap: break-word; word-break: break-word;text-transf=
+orm: uppercase;text-align:center;padding: 0px 10px;">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fnewsletter.lindt.com%2Foptiext%2Foptiextension.dll%3FID%3DqYZq2RbHm5CjV=
+iW2LEnDK4O0Rkq69t%252BMCXJNWeLfUC0AbsAG4mg2VmYvKNQs82d3wxDGCX7jZvId31yD%252=
+BLzly9wI0O7L_hbrDBsjumWR&amp;data=3D05%7C02%7Ca.shtifanov%40house-of-commun=
+ication.com%7C67b893b6931345b0c73808dcd40d27d7%7C816ef078e1e24e49b26568b9d2=
+a9ae92%7C0%7C0%7C638618400213045147%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjA=
+wMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=
+=3Dj3oC%2FpFXZiffuSJpiqRj3cRboD7V1R5wehQumocZGhk%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://newsletter.lindt.com/optiext/optiextension.dll?ID=3DqYZq2=
+RbHm5CjViW2LEnDK4O0Rkq69t%2BMCXJNWeLfUC0AbsAG4mg2VmYvKNQs82d3wxDGCX7jZvId31=
+yD%2BLzly9wI0O7L_hbrDBsjumWR" shash=3D"WnPzukfr5+XLt3Ru9aJbxMrj3jqPj+x5m4d7=
+4ZN6tjoZO3nTy+CzOaSm9Rt9HOFbAxwINePW+MVkm7Wwf8YbSt+UC2GrsCaS2RucmaH4oVTfUXM=
+HJJwe7qkh1QPWj3Uzmx+hcUeJ0SmZsf92ggsdKVECItvjQahumVPMuJI9yyM=3D" style=3D"c=
+olor:#CBA052;text-decoration:none;"><strong style=3D"font-weight:normal;">L=
+indt
+ Shops</strong></a> </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- :: End Article (2) --></td>
+<td style=3D"text-align:center;width:33.333%; max-width:190px;" valign=3D"t=
+op"><!-- :: Start Article (3) -->
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"padding:0px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"font-family:'Optima Nova', arial; font-weight:normal; font-siz=
+e:12px; mso-line-height-rule:exactly; line-height:20px; color:#CBA052; max-=
+height: 999999px; word-wrap: break-word; word-break: break-word;text-transf=
+orm: uppercase;text-align:center;padding: 0px 10px;">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fnewsletter.lindt.com%2Foptiext%2Foptiextension.dll%3FID%3DqYZqY0aYqPDBb=
+9Jb3J_c6Ws67hb8XXIh9PZyQ4pF71Yv7nuG41ZVyKX7RCybePUtQ43Y%252BfjWWzjdHlHT%252=
+Bpy4UG0BzQGJ9pLCgggO9aWV&amp;data=3D05%7C02%7Ca.shtifanov%40house-of-commun=
+ication.com%7C67b893b6931345b0c73808dcd40d27d7%7C816ef078e1e24e49b26568b9d2=
+a9ae92%7C0%7C0%7C638618400213055019%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjA=
+wMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=
+=3D8RxLD8t5lkN21C74PiD%2FcxzWtHafitb7xxC4FqjQTuo%3D&amp;reserved=3D0" origi=
+nalsrc=3D"https://newsletter.lindt.com/optiext/optiextension.dll?ID=3DqYZqY=
+0aYqPDBb9Jb3J_c6Ws67hb8XXIh9PZyQ4pF71Yv7nuG41ZVyKX7RCybePUtQ43Y%2BfjWWzjdHl=
+HT%2Bpy4UG0BzQGJ9pLCgggO9aWV" shash=3D"VdXamwcd2V06yg/Q81zO7lPBCU543HssZhfz=
+/II9IkdlrK20v4iu007BcsQEmx7F+RJ8Bw//ps+T1o90eusfK5DfHv13uqmaKUvXrzNtzZErU4W=
+bWzxH2oD7OVDkzgMSQDrGrrNiMvCq0V4cW7DTr6KYK+laBY+MsMRyCcWoZnc=3D" style=3D"c=
+olor:#CBA052;text-decoration:none;"><strong style=3D"font-weight:normal;">O=
+nline
+ Shop</strong></a> </td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- :: End Article (3) --></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0;line-height:1px;height:1px;" heig=
+ht=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- :: End Menu layout --><!-- End Header --></td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td bgcolor=3D"#ffffff" valign=3D"top" style=3D"width:600px;text-align:left=
+;word-wrap:break-word;word-break:normal">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"font-family:'Roboto', arial;font-size:16px;color:#424242;font-=
+weight:normal;word-wrap:break-word;word-break:normal;text-align:left">
+<h2 style=3D"font-family:'Optima Nova', arial;font-size:22px;color:#424242;=
+word-wrap:break-word;word-break:normal;text-align:center">
+Einmalige Erinnerung: Ihr Interesse an unserem Lindt Newsletter. <br>
+</h2>
+<p style=3D"font-family:'Roboto', arial;font-size:16px;color:#424242;font-w=
+eight:normal;word-wrap:break-word;word-break:normal;text-align:center">
+Sie haben sich k=C3=BCrzlich f=C3=BCr den Lindt Newsletter angemeldet, aber=
+ die Anmeldung noch nicht best=C3=A4tigt. Damit wir Ihnen Lindt Newsletter =
+mit&nbsp;<span style=3D"text-align:center;">Sonderangeboten, Produktneuheit=
+en, Rezepten, Einladungen zu Veranstaltungen und vielem
+ mehr </span>senden d=C3=BCrfen, ben=C3=B6tigen wir Ihre Best=C3=A4tigung.&=
+nbsp;Sie sind nur noch einen Klick davon entfernt.<br>
+</p>
+</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"18" style=3D"line-height:18px;height:18px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://newsletter.lindt.com/Portal/resourcehandler/static/=
+x.png" height=3D"18" style=3D"display:block;height:18px"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td bgcolor=3D"#ffffff" valign=3D"top" style=3D"width:600px;text-align:left=
+;word-wrap:break-word;word-break:normal">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td align=3D"center">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" class=3D"btn_table" width=3D"150" style=3D"display:table">
+<tbody>
+<tr>
+<td class=3D"btn_td" bgcolor=3D"#CBA052" width=3D"150" style=3D"font-family=
+:Tahoma;font-size:12px;color:#ffffff;padding-top:10px;padding-right:15px;pa=
+dding-bottom:10px;padding-left:15px;text-align:center;text-decoration:none;=
+border-radius:0px;text-overflow:ellipsis;overflow:hidden;word-wrap:break-wo=
+rd;word-break:normal;font-weight:normal;line-height:20px;border-color:#CBA0=
+52;border-width:1px;border-style:solid;mso-height-rule:exactly">
+<a class=3D"btn" href=3D"https://eur02.safelinks.protection.outlook.com/?ur=
+l=3Dhttps%3A%2F%2Fnewsletter.lindt.com%2Foptiext%2Foptiextension.dll%3FID%3=
+DqYZq1CGfDYmCZgpr4nPci9%252BHcN%252BtMdEQXeCZ3Y2UcLQCWo5G4Rnak8P6jz8S_SNIl1=
+2LH9YXsmjZsGxXEpKnI8_ycagGOxDTPSsGP9qN&amp;data=3D05%7C02%7Ca.shtifanov%40h=
+ouse-of-communication.com%7C67b893b6931345b0c73808dcd40d27d7%7C816ef078e1e2=
+4e49b26568b9d2a9ae92%7C0%7C0%7C638618400213063577%7CUnknown%7CTWFpbGZsb3d8e=
+yJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C=
+%7C&amp;sdata=3DHsPbkSVCeA3bEGXkhDPVFLn9xjdXSyMUXeHkmk9ynPE%3D&amp;reserved=
+=3D0" originalsrc=3D"https://newsletter.lindt.com/optiext/optiextension.dll=
+?ID=3DqYZq1CGfDYmCZgpr4nPci9%2BHcN%2BtMdEQXeCZ3Y2UcLQCWo5G4Rnak8P6jz8S_SNIl=
+12LH9YXsmjZsGxXEpKnI8_ycagGOxDTPSsGP9qN" shash=3D"z5VZFqbkqltKlM45MLBYzX+jg=
+PtUqj0uQYAgamEcI5t/hdF5B0F0v5B4qNtBbMcqzARcsxyzeqt4RZI/jlXttCmIR5tsxanGpqS+=
+yNTGcq7YHNhZlpfcVQRVGARsYc3/RPqY+2esWk5Ipl9BXrKTqq/oBuqFfkFlhFcQE+nVr1U=3D"=
+ target=3D"_blank" rel=3D"noopener noreferrer" style=3D"color:#ffffff;text-=
+decoration:none">Jetzt
+ best=C3=A4tigen</a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"30" style=3D"line-height:30px;height:30px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://newsletter.lindt.com/Portal/resourcehandler/static/=
+x.png" height=3D"30" style=3D"display:block;height:30px"></td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td style=3D"font-family:'Roboto', arial;font-size:16px;color:#424242;font-=
+weight:normal;word-wrap:break-word;word-break:normal;text-align:left">
+<div style=3D"text-align:center;">
+<p style=3D"font-family:'Roboto', arial;font-size:16px;color:#424242;font-w=
+eight:normal;word-wrap:break-word;word-break:normal">
+Dies ist eine einmalige Erinnerung zur Best=C3=A4tigung der Newsletter-Anme=
+ldung, wenn Sie kein Interesse mehr an dem Erhalt des Lindt Newsletters hab=
+en oder die Anmeldung nicht selbst get=C3=A4tigt haben k=C3=B6nnen Sie dies=
+e E-Mail ignorieren - wir werden Sie zuk=C3=BCnftig
+ nicht wieder erinnern.&nbsp;</p>
+<p style=3D"font-family:'Roboto', arial;font-size:16px;color:#424242;font-w=
+eight:normal;word-wrap:break-word;word-break:normal">
+Der Schutz Ihrer pers=C3=B6nlichen Daten ist uns wichtig. Weitere Informati=
+onen finden Sie in den
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fnewsletter.lindt.com%2Foptiext%2Foptiextension.dll%3FID%3DqYZq0%252B30H=
+JyavgXOjMARMx8z%252By0%252BphK7o3N4JN0eRxB0Oj9G5Aa0BbdkR_uzf04ufQKk3El57YBC=
+JxseBtVQa6n_cNp8zE_IoJXUKqWD&amp;data=3D05%7C02%7Ca.shtifanov%40house-of-co=
+mmunication.com%7C67b893b6931345b0c73808dcd40d27d7%7C816ef078e1e24e49b26568=
+b9d2a9ae92%7C0%7C0%7C638618400213070931%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sd=
+ata=3D7%2FRU6Bx2nyhuiUy%2Bo%2FTkzOGVOEcCFIQq5ISt27lkQ4c%3D&amp;reserved=3D0=
+" originalsrc=3D"https://newsletter.lindt.com/optiext/optiextension.dll?ID=
+=3DqYZq0%2B30HJyavgXOjMARMx8z%2By0%2BphK7o3N4JN0eRxB0Oj9G5Aa0BbdkR_uzf04ufQ=
+Kk3El57YBCJxseBtVQa6n_cNp8zE_IoJXUKqWD" shash=3D"lq/nBwMl3dBtRMogNS3Sga8Cp3=
+usKmqpruSQQUHwXtYQ0c+oV4cSwq6P2ThRpTTXOlhJgi8ux34OKemHrDhSWNxZMmWhQZ02cql7h=
+Q97Lq1BwHEIlIf3SI/QIjqouAJzJeXgPjhg/HDJ2h6d0HJkNYiBy3bqGH9MNE7yDgFOwLY=3D">
+Lindt Datenschutzrichtlinien</a>. Sie k=C3=B6nnen sich jederzeit von dem Er=
+halt der Lindt Newsletter abmelden, indem Sie in einem Lindt Newsletter auf=
+ den Link zum Abbestellen klicken oder indem Sie uns auf
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fnewsletter.lindt.com%2Foptiext%2Foptiextension.dll%3FID%3DqYZq0jbynEklJ=
+kOSFB7oQdgfbFPHGJGIo9kjJ_GjgT3s62va5zwW9TIEk2Dj_ak3VHDD93O4rtC9k8UR%252BhjD=
+Qfy_oYNfdPIyt4G0zCq3&amp;data=3D05%7C02%7Ca.shtifanov%40house-of-communicat=
+ion.com%7C67b893b6931345b0c73808dcd40d27d7%7C816ef078e1e24e49b26568b9d2a9ae=
+92%7C0%7C0%7C638618400213078109%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDA=
+iLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=3D0E=
+%2Fa1uMuB1nbq38RaHSI%2F4VL2khhYxRlkjYeg1R2TmQ%3D&amp;reserved=3D0" original=
+src=3D"https://newsletter.lindt.com/optiext/optiextension.dll?ID=3DqYZq0jby=
+nEklJkOSFB7oQdgfbFPHGJGIo9kjJ_GjgT3s62va5zwW9TIEk2Dj_ak3VHDD93O4rtC9k8UR%2B=
+hjDQfy_oYNfdPIyt4G0zCq3" shash=3D"JgfMILGZzrlZmf+gJbYsJsbA49vOWo0/qdh21RMHN=
+mrznXpgstm7rWvGpBoQjCUENZ/e5kFI33tSxjq+6FT4GeSdfwRvpkuIwy13ObTGbOGu/yMyq2BI=
+/tbaQXTCxh7/GR3zHCfOB5ngnB3fAc6DDvJ9BXecNaZ1T9eqg0Wc1Gc=3D">
+www.lindt.de</a> besuchen.</p>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" role=3D"presentatio=
+n" width=3D"100%">
+<tbody>
+<tr>
+<td height=3D"18" style=3D"line-height:18px;height:18px"><img alt=3D"" bord=
+er=3D"0" src=3D"https://newsletter.lindt.com/Portal/resourcehandler/static/=
+x.png" height=3D"18" style=3D"display:block;height:18px"></td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" bgcolor=3D"#ffffff">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+<td bgcolor=3D"#ffffff" valign=3D"top" style=3D"width:600px;text-align:left=
+;word-wrap:break-word;word-break:normal">
+<style>@media screen and (max-width:600px){
+    .social_icon_wrapper {
+        text-align: center;
+    }
+    .social_icon {
+        display: inline-block !important;
+        padding: 15px !important;
+    }
+    .menu_block {
+        font-size: 12px !important;
+    }
+}</style><!-- Footer --><!-- :: Start Social media layout --><!-- :: End So=
+cial media  layout --><!-- :: Start footer menu layout -->
+<table class=3D"sg_editor_hide" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" width=3D"100%" role=3D"presentation">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0;line-height:1px;height:1px;" heig=
+ht=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" style=3D"width:600px;">
+<table bgcolor=3D"#FFFFFF" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ width=3D"100%" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"font-size:0;padding:0px 10px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" styl=
+e=3D"text-align:center;padding:12px;border-top: 1px solid #CBA052;border-bo=
+ttom: 1px solid #CBA052;" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"text-align:center;width:25%; max-width:142px;" valign=3D"top">=
+<!-- :: Start Article (1) -->
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"padding:0px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td class=3D"menu_block" style=3D"font-family:'Optima Nova', arial; font-we=
+ight:normal; font-size:14px; mso-line-height-rule:exactly; line-height:20px=
+; color:#CBA052;max-height: 999999px; text-transform: uppercase;text-align:=
+center;">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fnewsletter.lindt.com%2Foptiext%2Foptiextension.dll%3FID%3DqYZqXjT9hBWn6=
+3FyF1CyqataPItAt%252BX10nm5ZLQ4RRw2JigG4wB_fDEGn_pGUrnWxuSW%252BW6B4roAtYwm=
+6tfa_J8dgWzInUOhq38H7_qy&amp;data=3D05%7C02%7Ca.shtifanov%40house-of-commun=
+ication.com%7C67b893b6931345b0c73808dcd40d27d7%7C816ef078e1e24e49b26568b9d2=
+a9ae92%7C0%7C0%7C638618400213085918%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjA=
+wMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=
+=3D%2Ff8T%2BxmAxAMJSl3FPZ9663N%2BhsSJ5ayQ656Y5OjLxQA%3D&amp;reserved=3D0" o=
+riginalsrc=3D"https://newsletter.lindt.com/optiext/optiextension.dll?ID=3Dq=
+YZqXjT9hBWn63FyF1CyqataPItAt%2BX10nm5ZLQ4RRw2JigG4wB_fDEGn_pGUrnWxuSW%2BW6B=
+4roAtYwm6tfa_J8dgWzInUOhq38H7_qy" shash=3D"DNtkjDJqMshy0zfFGnOwEai3sj1MeN9t=
+pBxejsXV5yTI4/cQ3agYtNU440BICa9HtDc8HU/oD40SpWnwWctF55hvGnDzij7pvgpgldyQw6A=
+xPa9oD87MXxcHXkW94Rs7DuweqjP2Kc7SnhgeWC50iAA3zROijQjNEZ+ayamQWpQ=3D" style=
+=3D"color:#CBA052;text-decoration:none;">Kontakt</a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- :: End Article (1) --></td>
+<td style=3D"text-align:center;width:25%; max-width:142px;" valign=3D"top">=
+<!-- :: Start Article (2) -->
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"padding:0px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td class=3D"menu_block" style=3D"font-family: 'Optima Nova', arial; font-w=
+eight:normal; font-size:14px; mso-line-height-rule:exactly; line-height:20p=
+x; color:#CBA052;max-height: 999999px; text-transform: uppercase;text-align=
+:center;">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fnewsletter.lindt.com%2Foptiext%2Foptiextension.dll%3FID%3DqYZq2%252BilI=
+uvZ42eoH%252BEA185AjG2mXFYnAu2dV48sG56Etvba4CF554J33k2ULAJk8BBkqqIyNwwYzHJC=
+iI5yk8zWhDNSvYbNjuijpZqJ&amp;data=3D05%7C02%7Ca.shtifanov%40house-of-commun=
+ication.com%7C67b893b6931345b0c73808dcd40d27d7%7C816ef078e1e24e49b26568b9d2=
+a9ae92%7C0%7C0%7C638618400213093000%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjA=
+wMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=
+=3DvZ%2FfyPSADSKfU%2BONzJTDej2WQfPOK6joIfIodKPIHtY%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://newsletter.lindt.com/optiext/optiextension.dll?ID=3DqYZ=
+q2%2BilIuvZ42eoH%2BEA185AjG2mXFYnAu2dV48sG56Etvba4CF554J33k2ULAJk8BBkqqIyNw=
+wYzHJCiI5yk8zWhDNSvYbNjuijpZqJ" shash=3D"uW18Kq5vF2Ix+i7ZbhAFe8bOTU7YlWk26p=
+C8JTf2c+TrJsuHrFk8ETaGXAF2PheFL/S8SRZQgaKA8MPQxY2TskOzD8oDOx3ygru+6oHX/y16u=
+4GQtU7hH+8GhFaEH6Jryx2tsCTpUzJc5tgxq3Xk+pVgVmYKvYXaU26jaqHrYBc=3D" style=3D=
+"color:#CBA052;text-decoration:none;"><span class=3D"m_hide">Gewinnspiele</=
+span>
+<span class=3D"m_show" style=3D"display:none;width:100%;">Gewinn-<br>
+spiele</span> </a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- :: End Article (2) --></td>
+<td style=3D"text-align:center;width:25%; max-width:142px;" valign=3D"top">=
+<!-- :: Start Article (3) -->
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"padding:0px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td class=3D"menu_block" style=3D"font-family: 'Optima Nova', arial; font-w=
+eight:normal; font-size:14px; mso-line-height-rule:exactly; line-height:20p=
+x; color:#CBA052;max-height: 999999px; text-transform: uppercase;text-align=
+:right;">
+</td>
+</tr>
+<tr>
+<td class=3D"menu_block" style=3D"font-family: 'Optima Nova', arial; font-w=
+eight:normal; font-size:14px; mso-line-height-rule:exactly; line-height:20p=
+x; color:#CBA052;max-height: 999999px; text-transform: uppercase;text-align=
+:center;">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fnewsletter.lindt.com%2Foptiext%2Foptiextension.dll%3FID%3DqYZq1foZE9_P9=
+RCVuJ831XljH%252BoFY8dJN%252Bm8MnlEumeVQVeG5fGoZE_hDWPGS3Z50jhf2XaDJ22EA7KT=
+k%252BUfwlqSDApfD1lWSPKdh7W6&amp;data=3D05%7C02%7Ca.shtifanov%40house-of-co=
+mmunication.com%7C67b893b6931345b0c73808dcd40d27d7%7C816ef078e1e24e49b26568=
+b9d2a9ae92%7C0%7C0%7C638618400213100320%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4=
+wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sd=
+ata=3DD%2BqiW1VhtFmWBBws%2FvrXGCNT0ikhZ3MQvWff30gcRSQ%3D&amp;reserved=3D0" =
+originalsrc=3D"https://newsletter.lindt.com/optiext/optiextension.dll?ID=3D=
+qYZq1foZE9_P9RCVuJ831XljH%2BoFY8dJN%2Bm8MnlEumeVQVeG5fGoZE_hDWPGS3Z50jhf2Xa=
+DJ22EA7KTk%2BUfwlqSDApfD1lWSPKdh7W6" shash=3D"UxiFcw/8Tt6f7mr5CMEqjZbcwM549=
+rufmyDSjjL3Q3OdFgomBfjjDoP72aYcfg1QmsyhcSUnyisv87vdv4pmq+tvZgabN06El7LTNyQd=
+6TY2HqWzfIB+tFum6GdTk4WiWGaaDgBCzcRqSrjSldCNZcRw7liUBsUamlAEBz3O6AI=3D" sty=
+le=3D"color:#CBA052;text-decoration:none;">Rezepte</a>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- :: End Article (3) --></td>
+<td style=3D"text-align:center;width:25%; max-width:142px;" valign=3D"top">=
+<!-- :: Start Article (4) -->
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td style=3D"padding:0px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td>
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation" align=3D"center">
+<tbody>
+<tr>
+<td class=3D"menu_block" style=3D"font-family: 'Optima Nova', arial; font-w=
+eight:normal; font-size:14px; mso-line-height-rule:exactly; line-height:20p=
+x; color:#CBA052;max-height: 999999px; text-transform: uppercase;text-align=
+:center;">
+<a href=3D"https://eur02.safelinks.protection.outlook.com/?url=3Dhttps%3A%2=
+F%2Fnewsletter.lindt.com%2Foptiext%2Foptiextension.dll%3FID%3DqYZqW4mtnRdyR=
+60uW8MUlqWg5C7GKSCNoIGo5U1lm5Muu%252B%252BG5OUF4npaDJmU98fEWS6grHpnF8uIG3ZY=
+NSj8eIWPhd8anF4Znw1rhnqg&amp;data=3D05%7C02%7Ca.shtifanov%40house-of-commun=
+ication.com%7C67b893b6931345b0c73808dcd40d27d7%7C816ef078e1e24e49b26568b9d2=
+a9ae92%7C0%7C0%7C638618400213108936%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjA=
+wMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=
+=3D9NlcNJIPYjxVOZSnuzHGnaxvKcHFg%2Fb%2BG5bDGULS2MA%3D&amp;reserved=3D0" ori=
+ginalsrc=3D"https://newsletter.lindt.com/optiext/optiextension.dll?ID=3DqYZ=
+qW4mtnRdyR60uW8MUlqWg5C7GKSCNoIGo5U1lm5Muu%2B%2BG5OUF4npaDJmU98fEWS6grHpnF8=
+uIG3ZYNSj8eIWPhd8anF4Znw1rhnqg" shash=3D"dkv3Xwb6isjnb0gTgylI0N3SGP9yxydYaO=
+ANr/fWao/rm0F+GVdck4RU35YNDnUiScwpYrUkuJEGd56a+Wqa1uQJD7bJZ7yrzDRV5dRzfSJW6=
+HyDqt+ZFqFJ5lJapghIWoS/IiC+6cS2aBGtKZaB1doW5bVGDg7JZpWO2yTEGy4=3D" style=3D=
+"color:#CBA052;text-decoration:none;"><span class=3D"m_hide">Nachhaltigkeit=
+</span>
+<span class=3D"m_show" style=3D"display:none;width:100%;">NACHHAL-<br>
+TIGKEIT</span> </a></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- :: End Article (4) --></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0;line-height:1px;height:1px;" heig=
+ht=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- :: End footer menu layout --><!-- :: Start Legal layout -->
+<table class=3D"sg_editor_hide" cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" width=3D"100%" role=3D"presentation">
+<tbody>
+<tr>
+<td class=3D"m_hide" style=3D"font-size:0;line-height:1px;height:1px;" heig=
+ht=3D"1">&nbsp;</td>
+<td class=3D"m_wrapper" style=3D"width:600px;">
+<table bgcolor=3D"#FFFFFF" cellpadding=3D"0" cellspacing=3D"0" border=3D"0"=
+ width=3D"100%" role=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"padding: 15px 10px;">
+<table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" role=
+=3D"presentation">
+<tbody>
+<tr>
+<td style=3D"text-align:center; font-family:Roboto, arial; font-size:10px; =
+mso-line-height-rule:exactly; line-height:15px; color:#9E9E9E;max-height: 9=
+99999px; word-wrap: break-word; word-break: break-word;font-weight: bold;">
+Chocoladefabriken Lindt &amp; Spr=C3=BCngli GmbH<br>
+S=C3=BCsterfeldstr. 130<br>
+52072 Aachen<br>
+Deutschland<br>
+<br>
+Sitz: Aachen, Amtsgericht Aachen HRB 3452<br>
+Gesch=C3=A4ftsf=C3=BChrer: Michal Spiller, Martin Allerchen<br>
+Handelsregistereintrag: AG Aachen HBR 3452<br>
+UStId.-Nr.: DE121688929<br>
+<br>
+Dieser Newsletter wurde an a.shtifanov+lindt-de@house-of-communication.com =
+gesendet. Dieser Newsletter wird Ihnen ausschlie=C3=9Flich mit Ihrem Einver=
+st=C3=A4ndnis zugesandt. Wollen Sie diesen Newsletter in Zukunft nicht mehr=
+ erhalten, klicken Sie bitte
+<strong><a style=3D"text-decoration:underline;color:#9E9E9E;" unsubscribe-l=
+ink=3D"true" href=3D"https://eur02.safelinks.protection.outlook.com/?url=3D=
+https%3A%2F%2Fnewsletter.lindt.com%2Foptiext%2Foptiextension.dll%3FID%3DqYZ=
+qY2pczYCzt9spNupVA5o2nCsSFfhgqbyAOah2F8d9_LoG5RwGRDk8pdzHsfygcAvSsX9PsU%252=
+BsuHuSnbv%252Bc09dYoUWL5fCd0uJr_WI&amp;data=3D05%7C02%7Ca.shtifanov%40house=
+-of-communication.com%7C67b893b6931345b0c73808dcd40d27d7%7C816ef078e1e24e49=
+b26568b9d2a9ae92%7C0%7C0%7C638618400213118292%7CUnknown%7CTWFpbGZsb3d8eyJWI=
+joiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&=
+amp;sdata=3DPkZA7Zx66I57HCILhUY5d%2F16%2FqBaA3AvotrzFe3%2Baro%3D&amp;reserv=
+ed=3D0" originalsrc=3D"https://newsletter.lindt.com/optiext/optiextension.d=
+ll?ID=3DqYZqY2pczYCzt9spNupVA5o2nCsSFfhgqbyAOah2F8d9_LoG5RwGRDk8pdzHsfygcAv=
+SsX9PsU%2BsuHuSnbv%2Bc09dYoUWL5fCd0uJr_WI" shash=3D"dLtELj0FUqrLdVnWsiCwqA3=
+PPYiIO+UO+4zoDVt2sPbOsSJ0Rg6QLhk871l9aP3ymYiCz7PLbG0XCkT8iA3aSEoB7TR7fpaDYA=
+VDyw/QqTLeMHF3ZrIvsTPcCNdMJdynk2uaSY48+nsyQMxF/Dtag1GUjyH3K32KzUKskod0/t4=
+=3D">hier</a></strong>.
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+<td class=3D"m_hide" style=3D"font-size:0;line-height:1px;height:1px;" heig=
+ht=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!-- :: End legal layout --><!-- End Footer --></td>
+<td class=3D"m_hide" style=3D"font-size:0; line-height:1px; height:1px;" he=
+ight=3D"1">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
+
+--_NexPart_001_--

@@ -2,42 +2,52 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 
 # Uncomment the following line to use an example of a custom tool
-# from templatecrew.tools.custom_tool import MyCustomTool
+from kodo_template.tools.custom_tool import EmlToHtmlTool
 
 # Check our tools documentations for more information on how to use them
-# from crewai_tools import SerperDevTool
+from crewai_tools import FileReadTool
+file_tool = FileReadTool()
 
 @CrewBase
 class TemplatecrewCrew():
 	"""Templatecrew crew"""
 
 	@agent
-	def researcher(self) -> Agent:
+	def data_scientist(self) -> Agent:
 		return Agent(
-			config=self.agents_config['researcher'],
-			# tools=[MyCustomTool()], # Example of custom tool, loaded on the beginning of file
-			verbose=True
+			config=self.agents_config['data_scientist'],
+			tools=[EmlToHtmlTool(), file_tool],
+			verbose=True,
+			max_iter=1,
+			max_retry_limit=1
 		)
-
-	@agent
-	def reporting_analyst(self) -> Agent:
-		return Agent(
-			config=self.agents_config['reporting_analyst'],
-			verbose=True
-		)
+	
+	# @task
+	# def convert_task(self) -> Task:
+	# 	return Task(
+	# 		config=self.tasks_config['convert_task'],
+	# 	)
 
 	@task
-	def research_task(self) -> Task:
+	def html_parse_task(self) -> Task:
 		return Task(
-			config=self.tasks_config['research_task'],
+			config=self.tasks_config['html_parse_task'],
+			output_file='out\links.txt'
 		)
-
-	@task
-	def reporting_task(self) -> Task:
-		return Task(
-			config=self.tasks_config['reporting_task'],
-			# output_file='report.md' // it's best not to use output_files, as in the future, if the workflow will be deployed, it will be difficult to manage the output files on the remote server 
-		)
+	
+	# @task
+	# def correlate_task(self) -> Task:
+	# 	return Task(
+	# 		config=self.tasks_config['correlate_task'],
+	# 		output_file='correlation.csv'
+	# 	)
+	
+	# @task
+	# def heatmap_task(self) -> Task:
+	# 	return Task(
+	# 		config=self.tasks_config['heatmap_task'],
+	# 		output_file='heatmap.png'
+	# 	)
 
 	@crew
 	def crew(self) -> Crew:
