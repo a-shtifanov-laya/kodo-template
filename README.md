@@ -136,6 +136,8 @@ Refer to crewAI [documentation](https://docs.crewai.com) for more information on
 The only thing you need to do is to have one of your agents to use the `RegistryAgenticNodeTool`. Here is an example of how to do it:
 
 ```python
+from agenticos.tools.agentic_tools import RegistryAgenticNodeTool # add this import 
+
 @agent
 def agent_name(self) -> Agent:
    return Agent(
@@ -150,13 +152,10 @@ def agent_name(self) -> Agent:
    )
 ```
 
-**Things to consider:**
-- The tool which is used here is backed into the package itself. So it is independent from the custom tools which you can still create freely withing your workflow.
-- You can use remote nodes even if you are not connected to the registry.
 
-## Running the Node in Registry Mode
 
-1. **Add environment variables:**
+**Important note 1:** You need to have the following set of environment variables available for the package to work:
+
 ```bash
 export BASIC_AUTH_USERNAME=login_for_the_registry
 export BASIC_AUTH_PASSWORD=password_for_the_registry
@@ -166,15 +165,27 @@ export OPENAI_API_KEY=your_openai_api_key
 
 You will know the login and password from the registry's admin (during the hackathon). Feel free to add other environment variables if you use them (e.g. `ANTHROPIC_API_KEY`, `SERPER_API_KEY`, etc.).
 
-2. **Attach to the Registry:**
+**Important note 2:** Please run pip install once again after changing your crew, in order to update the package config:
+
+```bash
+pip install .
+```
+
+**More things to consider:**
+- The tool which is used here is backed into the package itself. So it is independent from the custom tools which you can still create freely withing your workflow.
+- You can use remote nodes even if you are not connected to the registry.
+
+## Running the Node in Registry Mode
+
+1. **Attach to the Registry:**
 > Once you are ready to connect to the registry. This way others will be able to use your node by querying your node's ID directly, or via `RegistryAgenticNodeTool`.
 
    ```bash
    agentic run --mode=registry --registry=wss://dev-agentic-registry.house-of-communication.world
    ```
 
-2. Visit the Swagger UI at [https://dev-agentic-registry.house-of-communication.world/swagger/index.html](https://dev-agentic-registry.house-of-communication.world/swagger/index.html).
-3. Visit the Registry UI at [https://dev-agentic-registry.house-of-communication.world/](https://dev-agentic-registry.house-of-communication.world/).
+2. **Visit the Swagger UI** at [https://dev-agentic-registry.house-of-communication.world/swagger/index.html](https://dev-agentic-registry.house-of-communication.world/swagger/index.html).
+3. **Visit the Registry UI** at [https://dev-agentic-registry.house-of-communication.world/webui](https://dev-agentic-registry.house-of-communication.world/webui).
 
 Your node should now be visible in the Registry UI. If you can't find it among the green (running) nodes, double check the node name in `src/agentic/agentic_config.py`, line 23 (by default it is `TEMPLATE_NODE`, but you can change it to anything you want - it makes the node more recognizable for you on the registry).
 
