@@ -3,15 +3,34 @@ from crewai_tools import BaseTool
 from email import policy
 from email.parser import BytesParser
 from bs4 import BeautifulSoup
+from urllib.parse import urlparse, parse_qs
+import csv
 
-class HtmlLinkParserTool:
-    def __init__(self):
-        pass
+class HtmlLinkParserTool(BaseTool):
+    name: str = "HTML Link Parser"
+    description: str = "Parses all the links in an HTML file"
 
-    def parse_links(self, html_file_path):
+    def _run(self) -> list:
+        html_file_path = 'out\email.html'
         with open(html_file_path, 'r', encoding='utf-8') as file:
             soup = BeautifulSoup(file, 'html.parser')
-            links = [a['href'] for a in soup.find_all('a', href=True)]
+            links = []
+            for a in soup.find_all('a', href=True):
+                href = a['href']
+                parsed_url = urlparse(href)
+                if 'safelinks.protection.outlook.com' in parsed_url.netloc:
+                    query_params = parse_qs(parsed_url.query)
+                    if 'url' in query_params:
+                        links.append(query_params['url'][0])
+                else:
+                    links.append(href)
+                    
+        links_file_path = 'out\links.csv'
+        with open(links_file_path, 'w', newline='', encoding='utf-8') as csvfile:
+            writer = csv.writer(csvfile)
+            writer.writerow(['Link'])
+            for link in links:
+                writer.writerow([link])
         return links
 
 class EmlToHtmlTool(BaseTool):

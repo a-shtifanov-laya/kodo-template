@@ -2,7 +2,7 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 
 # Uncomment the following line to use an example of a custom tool
-from kodo_template.tools.custom_tool import EmlToHtmlTool
+from kodo_template.tools.custom_tool import EmlToHtmlTool, HtmlLinkParserTool
 
 # Check our tools documentations for more information on how to use them
 from crewai_tools import FileReadTool
@@ -16,7 +16,7 @@ class TemplatecrewCrew():
 	def data_scientist(self) -> Agent:
 		return Agent(
 			config=self.agents_config['data_scientist'],
-			tools=[EmlToHtmlTool(), file_tool],
+			tools=[EmlToHtmlTool(), HtmlLinkParserTool()],
 			verbose=True,
 			max_iter=1,
 			max_retry_limit=1
@@ -31,8 +31,7 @@ class TemplatecrewCrew():
 	@task
 	def html_parse_task(self) -> Task:
 		return Task(
-			config=self.tasks_config['html_parse_task'],
-			output_file='out\links.txt'
+			config=self.tasks_config['html_parse_task']
 		)
 	
 	# @task

@@ -7,9 +7,9 @@ convert_task:
 
 html_parse_task:
   description: >
-    Parse the `out\email.html` and extract all the web links from it.
+    Parse the `out\email.html` html file and extract all the web links from it.
   expected_output: >
-    A list with all the links found in the provided html file
+    CSV file with all the links extracted from the provided html.
   agent: data_scientist
 
 correlate_task:
