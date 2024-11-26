@@ -198,7 +198,13 @@ docker build -t kodo-template .
 - `-t kodo-template` assigns a name to your image for easier reference.
 - The `.` specifies the current directory as the build context.
 
-5.  Run the Docker Container (in HTTP server mode)
+5.  Run the Docker Container 
+Run it in HTTP server mode:
+```bash
+docker run -e OPENAI_API_KEY=your_key_here -p 8000:8000 kodo-template
+```
+
+Run in registry mode:
 ```bash
 docker run -e OPENAI_API_KEY=your_key_here -e BASIC_AUTH_USERNAME=login_for_the_registry -e BASIC_AUTH_PASSWORD=password_for_the_registry -e REGISTRY_URL=wss://dev-agentic-registry.house-of-communication.world -p 8000:8000 kodo-template
 ```
@@ -225,15 +231,17 @@ docker run -e OPENAI_API_KEY=your_key_here -e BASIC_AUTH_USERNAME=login_for_the_
      docker ps
      ```
 
-   - Then, remove the container with:
+   - Then, stop and remove the container with:
 
      ```bash
+     docker stop <container_id>
      docker rm <container_id>
      ```
 
-   - You can also remove all the containers with the following command:
+   - You can also stop and remove all the containers with the following command:
 
       ```bash
+      docker stop $(docker ps -a -q)
       docker rm $(docker ps -a -q)
       ```
 
