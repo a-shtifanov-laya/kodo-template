@@ -34,12 +34,6 @@ class TemplatecrewCrew():
 			config=self.tasks_config['html_parse_task']
 		)
 	
-	# @task
-	# def correlate_task(self) -> Task:
-	# 	return Task(
-	# 		config=self.tasks_config['correlate_task'],
-	# 		output_file='correlation.csv'
-	# 	)
 	
 	# @task
 	# def heatmap_task(self) -> Task:
