@@ -16,17 +16,19 @@ class TemplatecrewCrew():
 	def data_scientist(self) -> Agent:
 		return Agent(
 			config=self.agents_config['data_scientist'],
-			tools=[EmlToHtmlTool(), HtmlLinkParserTool()],
+			tools=[
+				EmlToHtmlTool(), 
+				HtmlLinkParserTool()
+				],
 			verbose=True,
-			max_iter=1,
-			max_retry_limit=1
 		)
 	
-	# @task
-	# def convert_task(self) -> Task:
-	# 	return Task(
-	# 		config=self.tasks_config['convert_task'],
-	# 	)
+	
+	@task
+	def convert_task(self) -> Task:
+		return Task(
+			config=self.tasks_config['convert_task']
+		)
 
 	@task
 	def html_parse_task(self) -> Task:
